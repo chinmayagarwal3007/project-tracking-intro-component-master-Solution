@@ -1,0 +1,223 @@
+body{
+  font-family: 'Barlow', sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
+  "navbar"
+  "content"
+  "footer";
+}
+.navbar{
+  padding-top: 2rem;
+  padding-bottom: 30rem;
+  grid-area: navbar;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logo items";
+}
+.logo{
+  grid-area: logo;
+  padding-left: 10rem;
+}
+.items{
+  grid-area: items;
+  padding-left: 25rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+
+.content{
+  height: 29rem;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "discription devices"
+}
+.discription{
+  grid-area: discription;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  color: hsl(230, 29%, 20%);
+}
+.devices{
+  grid-area: devices;
+  background-image: url("C:/Users/Lenovo/Desktop/Web Development/project-tracking-intro-component-master/project-tracking-intro-component-master/images/illustration-devices.png");
+  background-position: left -35px center ;
+  background-repeat: no-repeat;
+}
+.footer{
+  grid-area: footer;
+}
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 0;
+}
+.itemNames{
+  padding: 0 1.25rem;
+  color: hsl(230, 29%, 20%);
+  cursor: pointer;
+}
+.itemNames:hover{
+  text-decoration: underline;
+}
+.login{
+  padding-left: 8.75rem;
+  color: hsl(231, 7%, 65%);
+}
+.login:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.demo{
+  padding-top: 3.75rem;
+}
+.project{
+  color: hsl(230, 11%, 40%);
+  font-size: 1.3rem;
+  padding-right: 15rem;
+}
+
+
+
+.btn {
+   -webkit-border-radius: 21px;
+   -moz-border-radius: 21px;
+   border-radius: 21px;
+   height: 1px;
+   line-height: 0;
+   color: #FFFFFF;
+   width: 45px;
+   font-size: 14px;
+   padding: 12px;
+   background-color: #000000;
+   border: solid #000000 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   font-family: 'Barlow Condensed', sans-serif;
+   font-weight: 700;
+   cursor: context-menu;
+}
+.dashboard{
+  padding-left: 1.25rem;
+  color: hsl(231, 7%, 65%);
+}
+
+
+
+
+.demoBtn {
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   height: 50px;
+   line-height: 31px;
+   color: #FFFFFF;
+   width: 188px;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 12px;
+   background-color: #FF5C5C;
+   border: solid #000000 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.demoBtn:hover {
+   border: solid #000000 0;
+   background: #FF8F8F;
+   background-image: -webkit-linear-gradient(top, #FF8F8F, #FF8F8F);
+   background-image: -moz-linear-gradient(top, #FF8F8F, #FF8F8F);
+   background-image: -ms-linear-gradient(top, #FF8F8F, #FF8F8F);
+   background-image: -o-linear-gradient(top, #FF8F8F, #FF8F8F);
+   background-image: -webkit-gradient(to bottom, #FF8F8F, #FF8F8F);
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   text-decoration: none;
+}
+
+.live{
+  padding-left: 1.25rem;
+  color: hsl(231, 7%, 65%);
+}
+
+@media only screen and (max-width:1024px) {
+  .content{
+    height: 29rem;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100% 100%;
+    grid-template-areas:
+    "devices"
+    "discription";
+  }
+  .devices{
+    background-position: center left;
+  }
+  .logo{
+    padding-left: 3rem;
+  }
+  .discription{
+    padding: 6rem 0 0 3rem;
+  }
+  .footer{
+    padding-top: 15rem;
+  }
+  .project{
+    font-size: 2rem;
+    padding-right: 4rem;
+  }
+  .dashboard{
+    font-size: 1.5rem;
+  }
+  .live{
+    font-size: 1.5rem;
+  }
+}
+.hamburger{
+  padding: 0.625rem 3.125rem 3.125rem 3.125rem;
+  cursor: pointer;
+}
+.dropdown{
+margin-left: 5rem;
+margin-top: -5rem;
+background-color: white;
+height: 70%;
+width: 70%;
+text-align: center;
+}
+.dropDownItem{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: hsl(230, 29%, 20%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.dropDownLogo{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: hsl(231, 7%, 65%);
+  cursor: pointer;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.dropDownItem:hover{
+  text-decoration: underline;
+}
+.dropDownLogo:hover{
+  text-decoration: underline;
+}
