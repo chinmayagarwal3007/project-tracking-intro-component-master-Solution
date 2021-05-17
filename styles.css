@@ -48,7 +48,7 @@ body{
 }
 .devices{
   grid-area: devices;
-  background-image: url("C:/Users/Lenovo/Desktop/Web Development/project-tracking-intro-component-master/project-tracking-intro-component-master/images/illustration-devices.png");
+  background-image: url("illustration-devices.png");
   background-position: left -35px center ;
   background-repeat: no-repeat;
 }
