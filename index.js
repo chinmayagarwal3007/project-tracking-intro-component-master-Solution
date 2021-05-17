@@ -7,7 +7,7 @@ function hello(){
     parent.removeChild(child);
 
     var img = document.createElement('img');
-    img.src = "images/icon-hamburger.png";
+    img.src = "icon-hamburger.png";
     document.getElementById('items').appendChild(img);
 
     document.getElementById('items').getElementsByTagName("img")[0].classList.add("hamburger");
@@ -16,7 +16,7 @@ function hello(){
 
     document.getElementById('items').getElementsByTagName("img")[0].addEventListener("click", function(){
       if (a == 0){
-        document.getElementById('items').getElementsByTagName("img")[0].src = "images/icon-close.png";
+        document.getElementById('items').getElementsByTagName("img")[0].src = "icon-close.png";
 
         var div  = document.createElement("div");
         document.getElementById("devices").appendChild(div);
@@ -60,7 +60,7 @@ function hello(){
         var child = parent.getElementsByTagName("div")[0];
         parent.removeChild(child);
 
-          document.getElementById('items').getElementsByTagName("img")[0].src = "images/icon-hamburger.png";
+          document.getElementById('items').getElementsByTagName("img")[0].src = "icon-hamburger.png";
           a = 0;
       }
 
