@@ -197,7 +197,7 @@ h1{
   .live{
     font-size: 1.5rem;
   }
-}
+
 .hamburger{
   padding: 0.625rem 3.125rem 3.125rem 3.125rem;
   cursor: pointer;
@@ -235,4 +235,5 @@ text-align: center;
   left: 20rem;
   width: 20rem;
   height: 46rem;
+}
 }
