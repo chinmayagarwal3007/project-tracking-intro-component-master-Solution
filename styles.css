@@ -1,3 +1,13 @@
+.grey{
+  height: 23.75rem;
+  width: 43.75rem;
+  background-color: hsl(207, 33%, 95%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 0 3.75rem;
+}
 body{
   font-family: 'Barlow', sans-serif;
   display: grid;
@@ -220,4 +230,9 @@ text-align: center;
 }
 .dropDownLogo:hover{
   text-decoration: underline;
+}
+.grey{
+  left: 20rem;
+  width: 20rem;
+  height: 46rem;
 }
